@@ -10,7 +10,8 @@ const app = express();
 
 // Sử dụng CORS middleware
 app.use(cors());
-const upload = multer({ dest: 'uploads/' });
+// const upload = multer({ dest: 'uploads/',
+//                         mimetype: "audio/mp3" });
 
 app.use(bodyParser.json());
 app.use('/', routes);
